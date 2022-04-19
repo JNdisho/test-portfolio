@@ -1,0 +1,354 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Times New Roman;
+    background-color: #66ff66;
+    color: white;
+}
+
+.logo {
+	  font-size: 1.5rem;
+    margin: .5rem;
+}
+
+/* The navigation-menu  part stars here */
+#nav-bar {
+  	display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #66ff66;
+}
+
+.navbar-links {
+  	height: 100%;
+}
+
+.navbar-links ul {
+	  display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #66ff66;
+    padding: 1rem;
+}
+
+.navbar-links li a:hover {
+    background-color: #66ff66;
+    color: white;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #66ff66;
+    border-radius: 10px;
+}
+
+/* The navigation-menu part ends here */
+
+/* The welcome part stars here */
+#welcome-section {
+  text-align: center;
+}
+/* The welcome part ends here */
+
+
+/* The about-me part stars here */
+#about-us {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: #66ff66;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#pic {
+  display: flex;
+  margin: 10px 0px 0px 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#pic img{
+  margin-top: 10px;
+  width: 575px;
+  height: 400px;
+  padding-bottom:50px;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 10px;
+}
+
+#intro h2{
+  font-size: 2rem;
+}
+/* The about-me part ends here */
+
+/* The services part stars here */
+h1 {
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.service-container{
+	display: flex;
+	justify-content: center;
+  color: black;
+  margin-bottom: 50px;
+}
+
+.cards{
+	background-color: white;
+	width: 270px;
+	margin: 10px;
+	border-radius: 15px;
+}
+
+.card-image {
+	height: 150px;
+	margin-bottom: 15px;
+	border-radius: 15px 15px 0 0;
+	background-size: cover;
+}
+
+.car-1 {
+	background-image: url('Car-1.jpg')
+}
+
+
+.car-2 {
+	background-image: url('Car-2.jpg')
+}
+
+.car-3{
+	background-image: url('Car-3.jpg')
+}
+
+.cards h2{
+	padding: 10px;
+	text-align: center;
+}
+
+.cards p{
+	padding: 10px;
+	text-align: center;
+}
+
+.cards button{
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	background-color: #ffaa0d;
+	color: white;
+	cursor: pointer;
+	font-family: monospace;
+	position: relative;
+	text-align: center;
+	margin-right:25%;
+	margin-left: 25%;
+	margin-bottom: 50px;
+	width: 50%;
+}
+
+.cards button:hover{
+	background-color: #66ff66;
+	color: white;
+}
+/* The services part ends here */
+
+/* The contact part stars here */
+
+main .contact-main {
+  background-size: cover;
+  background-color: white;
+  padding: 40px 0px;
+}
+
+main .contact-main h1 {
+  text-align: center;
+  color:#66ff66;
+  font-size: 24px;
+}
+
+main .border{
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto;
+}
+
+main .contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 50px 50px;
+  overflow: hidden;
+  background-color: #66ff66;
+}
+
+main .contact-txt-form{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0px;
+  border: 0px;
+  background-color: white;
+  padding: 20px 40px;
+}
+
+main .contact-txt-form:hover{
+  box-sizing: 0 0 10px cyan;
+}
+
+main textarea .contact-txt-form{
+  resize: none;
+  height: 120px;
+}
+
+main .contact-txt-form:focus{
+  box-shadpow: 0 0 10px 4px #34495e;
+}
+
+main .btn-send{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0px;
+  border: 0px;
+  background-color: darkgreen;
+  color: white;
+  padding: 20px 40px;
+  cursor: pointer;
+}
+
+main .btn-send:hover{
+  background-color: black;
+}
+
+/* The contact part ends here */
+
+
+/* The footer part stars here */
+
+
+footer {
+
+  background-color: #66ff66;
+  color: white;
+}
+footer .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .container .flex-row{
+  display: flex;
+  margin-top: 20px
+}
+
+footer .container ul {
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer .container li {
+  padding: 0 15px;
+  margin-bottom: 16px;
+  list-style-type: none;
+  color; white;
+}
+
+footer .container p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+footer .container i {
+  cursor: pointer;
+  font-size: 40px;
+}
+
+/* The footer part ends here */
+
+@media (max-width: 800px) {
+    #nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    #pic{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #pic img{
+      width: 475px;
+      height: 300px;
+    }
+
+    #intro h2{
+      text-align: center;
+      padding: 10px;
+    }
+}
